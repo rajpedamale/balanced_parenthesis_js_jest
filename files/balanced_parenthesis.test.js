@@ -40,5 +40,5 @@ describe('Balanced Parenthesis check', () => {
     expect(isBalanced('[({})]')).toBeTruthy();
     expect(isBalanced('{}([])')).toBeTruthy();
     expect(isBalanced('{()}[[{}]]')).toBeTruthy();
-  )};
+  });
 });
