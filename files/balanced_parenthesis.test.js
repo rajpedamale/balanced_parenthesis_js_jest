@@ -25,4 +25,8 @@ describe('Balanced Parenthesis check', () => {
     expect(isBalanced('()')).toBeTruthy();
   });
 
+  it('should return false for "(}"', () => {
+    expect(isBalanced('}')).toBeFalsy();
+  });
+
 });
