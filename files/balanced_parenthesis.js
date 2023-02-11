@@ -2,8 +2,9 @@
 
 const parenthesisMap = {
     '}': '{',
-    ']': '['
-}
+    ']': '[',
+    ')': '('
+};
 
 function isBalanced(parentheses) {
     if (!parentheses) return true;
