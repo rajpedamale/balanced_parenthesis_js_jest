@@ -33,6 +33,9 @@ describe('Balanced Parenthesis check', () => {
     expect(isBalanced('()}')).toBeFalsy();
   });
   
+  it('should return false for "("', () => {
+    expect(isBalanced('(')).toBeFalsy();
+  });
   
   it('should pass the suite of tests from ReadMe', () => {
     expect(isBalanced('{{)(}}')).toBeFalsy();
