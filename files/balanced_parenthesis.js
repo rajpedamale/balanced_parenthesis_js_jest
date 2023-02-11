@@ -25,6 +25,10 @@ function isBalanced(parentheses) {
             }
         }
     });
+  
+    if (openStack.length > 0) {
+        balanced = false;
+    }
 
     return balanced;
 };
