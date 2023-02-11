@@ -9,10 +9,12 @@ const parenthesisMap = {
 function isBalanced(parentheses) {
     if (!parentheses) return true;
 
-    let balanced = false;
+    let balanced;
     const openStack = [];
 
     [...parentheses].forEach(letter => {
+        if (balanced === false) return;
+
         if (Object.values(parenthesisMap).includes(letter)) {
             openStack.push(letter);
         } else if (Object.keys(parenthesisMap).includes(letter)) {
