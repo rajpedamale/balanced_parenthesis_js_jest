@@ -13,11 +13,13 @@ function isBalanced(parentheses) {
     const openStack = [];
 
     [...parentheses].forEach(letter => {
-        if (Object.keys(parenthesisMap).includes(letter)) {
+        if (Object.values(parenthesisMap).includes(letter)) {
             openStack.push(letter);
-        } else if (Object.values(parenthesisMap).includes(letter)) {
+        } else if (Object.keys(parenthesisMap).includes(letter)) {
             if (parenthesisMap[letter] === openStack.pop()) {
                 balanced = true;
+            } else {
+                balanced = false;
             }
         }
     });
