@@ -7,14 +7,14 @@ function isBalanced(parentheses) {
     const openStack = [];
 
     [...parentheses].forEach(letter => {
-        if (letter === '{') {
+        if (['{', '['].includes(letter)) {
             openStack.push(letter);
-        } else if (letter === '}') {
-            if (openStack.pop() === '{') {
+        } else if (['}' , ']'].includes(letter)) {
+            if (['{', '['].includes(openStack.pop())) {
                 balanced = true;
             }
         }
-    })
+    });
 
     return balanced;
 }
