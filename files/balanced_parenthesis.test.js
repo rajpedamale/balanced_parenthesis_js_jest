@@ -8,29 +8,29 @@ describe('Balanced Parenthesis check', () => {
   });
 
   it('should return true for empty arguments', () => {
-    expect(isBalanced('')).toBeTruthy();
-    expect(isBalanced()).toBeTruthy();
-    expect(isBalanced(null)).toBeTruthy();
+    expect(isBalanced('')).toEqual(true);
+    expect(isBalanced()).toEqual(true);
+    expect(isBalanced(null)).toEqual(true);
   });
 
   it('should return true for "{}"', () => {
-    expect(isBalanced('{}')).toBeTruthy();
+    expect(isBalanced('{}')).toEqual(true);
   });
 
   it('should return true for "[]"', () => {
-    expect(isBalanced('[]')).toBeTruthy();
+    expect(isBalanced('[]')).toEqual(true);
   });
 
   it('should return true for "()"', () => {
-    expect(isBalanced('()')).toBeTruthy();
+    expect(isBalanced('()')).toEqual(true);
   });
 
   it('should return false for "(}"', () => {
-    expect(isBalanced('}')).toBeFalsy();
+    expect(isBalanced('}')).toEqual(false);
   });
 
   it('should return false for "()}"', () => {
-    expect(isBalanced('()}')).toBeFalsy();
+    expect(isBalanced('()}')).toEqual(false);
   });
   
   it('should return false for "("', () => {
@@ -41,11 +41,15 @@ describe('Balanced Parenthesis check', () => {
     expect(isBalanced('((()')).toEqual(false);
   });
   
+  it('should return false for "(((){}"', () => {
+    expect(isBalanced('(((){}')).toEqual(false);
+  });
+  
   it('should pass the suite of tests from ReadMe', () => {
-    expect(isBalanced('{{)(}}')).toBeFalsy();
-    expect(isBalanced('({)}')).toBeFalsy();
-    expect(isBalanced('[({})]')).toBeTruthy();
-    expect(isBalanced('{}([])')).toBeTruthy();
-    expect(isBalanced('{()}[[{}]]')).toBeTruthy();
+    expect(isBalanced('{{)(}}')).toEqual(false);
+    expect(isBalanced('({)}')).toEqual(false);;
+    expect(isBalanced('[({})]')).toEqual(true);
+    expect(isBalanced('{}([])')).toEqual(true);
+    expect(isBalanced('{()}[[{}]]')).toEqual(true);
   });
 });
