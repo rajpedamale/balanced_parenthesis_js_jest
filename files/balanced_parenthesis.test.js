@@ -13,8 +13,12 @@ describe('Balanced Parenthesis check', () => {
     expect(isBalanced(null)).toBeTruthy();
   });
 
-  it('should return true for {}', () => {
+  it('should return true for "{}"', () => {
     expect(isBalanced('{}')).toBeTruthy();
+  });
+
+  it('should return true for "[]"', () => {
+    expect(isBalanced('[]')).toBeTruthy();
   });
 
 });
