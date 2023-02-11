@@ -1,8 +1,8 @@
 'use strict';
 
-const isBalanced = require('./balanced_paranthesis');
+const isBalanced = require('./balanced_parenthesis');
 
-describe('Balanced Paranthesis check', () => {
+describe('Balanced Parenthesis check', () => {
   it('should return a boolean', () => {
     expect(typeof isBalanced('')).toEqual('boolean');
   });

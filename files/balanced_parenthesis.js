@@ -1,6 +1,6 @@
 'use strict';
 
-function isBalanced(parantheses) {
+function isBalanced(parentheses) {
   if (!parentheses) return true;
   return false;
 }

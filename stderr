@@ -1,50 +1,10 @@
-FAIL ./balanced_paranthesis.test.js
-  Balanced Paranthesis check
-    ✕ should return a boolean (2 ms)
-    ✕ should return true for empty arguments
+PASS ./balanced_parenthesis.test.js
+  Balanced Parenthesis check
+    ✓ should return a boolean (3 ms)
+    ✓ should return true for empty arguments (1 ms)
 
-  ● Balanced Paranthesis check › should return a boolean
-
-    ReferenceError: parentheses is not defined
-
-      2 | 
-      3 | function isBalanced(parantheses) {
-    > 4 |   if (!parentheses) return true;
-        |   ^
-      5 |   return false;
-      6 | }
-      7 | 
-
-      at isBalanced (balanced_paranthesis.js:4:3)
-      at Object.<anonymous> (balanced_paranthesis.test.js:7:19)
-
-  ● Balanced Paranthesis check › should return true for empty arguments
-
-    ReferenceError: parentheses is not defined
-
-      2 | 
-      3 | function isBalanced(parantheses) {
-    > 4 |   if (!parentheses) return true;
-        |   ^
-      5 |   return false;
-      6 | }
-      7 | 
-
-      at isBalanced (balanced_paranthesis.js:4:3)
-      at Object.<anonymous> (balanced_paranthesis.test.js:11:12)
-
-Test Suites: 1 failed, 1 total
-Tests:       2 failed, 2 total
+Test Suites: 1 passed, 1 total
+Tests:       2 passed, 2 total
 Snapshots:   0 total
-Time:        1.45 s
+Time:        1.387 s
 Ran all test suites.
-npm ERR! code ELIFECYCLE
-npm ERR! errno 1
-npm ERR! @ test: `jest --coverage`
-npm ERR! Exit status 1
-npm ERR! 
-npm ERR! Failed at the @ test script.
-npm ERR! This is probably not a problem with npm. There is likely additional logging output above.
-
-npm ERR! A complete log of this run can be found in:
-npm ERR!     /home/sandbox/.npm/_logs/2023-02-11T21_41_37_093Z-debug.log
