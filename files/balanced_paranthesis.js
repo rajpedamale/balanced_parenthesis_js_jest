@@ -1,7 +1,7 @@
 'use strict';
 
 function isBalanced() {
-  return 6 * 9;
+  return false;
 }
 
 module.exports = isBalanced;
