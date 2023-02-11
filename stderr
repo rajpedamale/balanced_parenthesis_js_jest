@@ -1,6 +1,6 @@
 PASS ./balanced_parenthesis.test.js
   Balanced Parenthesis check
-    ✓ should return a boolean (11 ms)
+    ✓ should return a boolean (3 ms)
     ✓ should return true for empty arguments (1 ms)
     ✓ should return true for "{}"
     ✓ should return true for "[]" (1 ms)
@@ -10,5 +10,5 @@ PASS ./balanced_parenthesis.test.js
 Test Suites: 1 passed, 1 total
 Tests:       6 passed, 6 total
 Snapshots:   0 total
-Time:        1.525 s
+Time:        1.456 s
 Ran all test suites.
