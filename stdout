@@ -3,12 +3,17 @@
 > eslint --config ${CYBER_DOJO_SANDBOX}/.eslintrc.json /**/*.js
 
 
+/sandbox/balanced_parenthesis.test.js
+  43:3  error  Parsing error: Unexpected token )
+
+✖ 1 problem (1 error, 0 warnings)
+
+
 > @ test /sandbox
 > jest --coverage
 
--------------------------|---------|----------|---------|---------|-------------------
-File                     | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
--------------------------|---------|----------|---------|---------|-------------------
-All files                |     100 |     87.5 |     100 |     100 |                   
- balanced_parenthesis.js |     100 |     87.5 |     100 |     100 | 18                
--------------------------|---------|----------|---------|---------|-------------------
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s 
+----------|---------|----------|---------|---------|-------------------
+All files |       0 |        0 |       0 |       0 |                   
+----------|---------|----------|---------|---------|-------------------
